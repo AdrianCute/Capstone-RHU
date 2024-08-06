@@ -1,0 +1,579 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+:root {
+	--grey: #F1F0F6;
+	--dark-grey: #8D8D8D;
+	--light: #fff;
+	--dark: #000;
+	--green: #81D43A;
+	--light-green: #E3FFCB;
+	--blue: #1775F1;
+	--light-blue: #D0E4FF;
+	--dark-blue: #0C5FCD;
+	--red: #FC3B56;
+}
+.ccontainer{
+  width: 85%;
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 20px 60px 30px 40px;
+  margin-left: 8%;
+
+}
+
+.ccontainer .ccontent{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ccontainer .ccontent .left-side{
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  position: relative;
+}
+
+.ccontent .left-side::before{
+  content: '';
+  position: absolute;
+  height: 70%;
+  width: 2px;
+  right: -15px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #afafb6;
+}
+
+.ccontent .left-side .details{
+  margin: 14px;
+  text-align: center;
+}
+
+.ccontent .left-side .details i{
+  font-size: 30px;
+  color: #1977cc;
+  margin-bottom: 10px;
+}
+
+.ccontent .left-side .details .topic{
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.ccontent .left-side .details .text-one,
+.ccontent .left-side .details .text-two{
+  font-size: 14px;
+  color: #afafb6;
+}
+
+.ccontainer .ccontent .right-side{
+  width: 75%;
+  margin-left: 75px;
+}
+
+.ccontent .right-side .topic-text{
+  font-size: 23px;
+  font-weight: 600;
+  color: #1977cc;
+}
+
+.right-side .input-box{
+  height: 50px;
+  width: 100%;
+  margin: 12px 0;
+}
+
+.right-side .input-box input,
+.right-side .input-box textarea{
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background: #F0F1F8;
+  border-radius: 6px;
+  padding: 0 15px;
+  resize: none;
+}
+
+.right-side .mmessage-box{
+  min-height: 110px;
+}
+
+.right-side .input-box textarea{
+  padding-top: 6px;
+}
+
+.right-side .buttoner{
+  display: inline-block;
+  margin-top: 12px;
+}
+.contact_button{
+  color: #ffffff;
+  font-size: 18px;
+  outline: none;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  background: var(--blue);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.right-side .buttoner input[type="button"]{
+  color: #4158da;
+  font-size: 18px;
+  outline: none;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  background: #2b94f0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.buttoner input[type="button"]:hover{
+  background: #145894;
+}
+
+@media (max-width: 950px) {
+  .ccontainer{
+    width: 90%;
+    padding: 30px 40px 40px 35px ;
+  }
+  .ccontainer .ccontent .right-side{
+   width: 75%;
+   margin-left: 55px;
+}
+}
+@media (max-width: 820px) {
+  .ccontainer{
+    margin: 40px 0;
+    height: 100%;
+  }
+  .ccontainer .ccontent{
+    flex-direction: column-reverse;
+  }
+ .ccontainer .ccontent .left-side{
+   width: 100%;
+   margin-top: 40px;
+   justify-content: center;
+   flex-wrap: wrap;
+ }
+ .ccontainer .ccontent .left-side::before{
+   display: none;
+ }
+ .ccontainer .ccontent .right-side{
+   width: 100%;
+   margin-left: 0;
+ }
+ 
+.ccontent .left-side .details i{
+  font-size: 0.9em;
+  color: #1977cc;
+  margin-bottom: 10px;
+}
+
+.ccontent .left-side .details .topic{
+  font-size: 0.9em;
+  font-weight: 500;
+}
+
+.ccontent .left-side .details .text-one,
+.ccontent .left-side .details .text-two{
+  font-size: 14px;
+  color: #afafb6;
+}
+
+}
+
+
+.content-table {
+  margin-top: 3%;
+  border-collapse: collapse;
+  margin-left: 6%;
+  font-size: 0.9em;
+  min-width: 1200px;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.content-table thead tr {
+  background-color:  #1977cc;
+  color: #ffffff;
+  text-align: left;
+  font-weight: bold;
+}
+
+.content-table th,
+.content-table td {
+  padding: 12px 15px;
+}
+
+.content-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.content-table tbody tr:last-of-type {
+  border-bottom: 2px solid #1977cc;
+}
+
+.bottom-up{
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background-color: rgb(97, 102, 117);
+  bottom: 40px;
+  right: 50px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  color: white;
+  font-size: 25px;
+  display: none;
+}
+
+
+.reg-container{
+  display: flex;
+  justify-content: center;
+  margin-top: 10%;
+}
+.reg-card {
+  max-width: 320px;
+  border-width: 1px;
+  border-color: rgba(219, 234, 254, 1);
+  border-radius: 1rem;
+  background-color: rgba(255, 255, 255, 1);
+  padding: 1rem;
+
+}
+
+.reg-header {
+  display: flex;
+  align-items: center;
+  grid-gap: 1rem;
+  gap: 1rem;
+}
+
+.reg-icon {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  background-color: rgba(96, 165, 250, 1);
+  padding: 0.5rem;
+  color: rgba(255, 255, 255, 1);
+}
+
+.reg-icon svg {
+  height: 1rem;
+  width: 1rem;
+}
+
+.reg-alert {
+  font-weight: 600;
+  color: rgba(107, 114, 128, 1);
+}
+
+.reg-message {
+  margin-top: 1rem;
+  color: rgba(107, 114, 128, 1);
+  text-align: center;
+}
+
+.reg-actions {
+  margin-top: 1.5rem;
+}
+
+.reg-actions a {
+  text-decoration: none;
+}
+
+.mark-as-read, .reg-read {
+  display: inline-block;
+  border-radius: 0.5rem;
+  width: 100%;
+  padding: 0.75rem 1.25rem;
+  text-align: center;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 600;
+}
+
+.reg-read {
+  background-color: rgba(59, 130, 246, 1);
+  color: rgba(255, 255, 255, 1);
+  cursor: pointer;
+  border: none;
+}
+
+.mark-as-read {
+  margin-top: 0.5rem;
+  background-color: rgba(249, 250, 251, 1);
+  color: rgba(107, 114, 128, 1);
+  transition: all .15s ease;
+}
+
+.mark-as-read:hover {
+  background-color: rgb(230, 231, 233);
+}
+ 
+.error {
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	width: 320px;
+	padding: 12px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: start;
+	background: #EF665B;
+	border-radius: 8px;
+	box-shadow: 0px 0px 5px -3px #111;
+  }
+  
+  .error__icon {
+	width: 20px;
+	height: 20px;
+	transform: translateY(-2px);
+	margin-right: 8px;
+  }
+  
+  .error__icon path {
+	fill: #fff;
+  }
+  
+  .error__title {
+	font-weight: 500;
+	font-size: 14px;
+	color: #fff;
+  }
+  
+  .error__close {
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+	margin-left: auto;
+  }
+  
+  .error__close path {
+	fill: #fff;
+  }
+
+.wrapper {
+  max-width: 1100px;
+  width: 100%;
+  position: relative;
+}
+.wrapper i {
+  top: 50%;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  font-size: 1.25rem;
+  position: absolute;
+  text-align: center;
+  line-height: 50px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.23);
+  transform: translateY(-50%);
+  transition: transform 0.1s linear;
+  z-index: 1;
+}
+.wrapper i:active{
+  transform: translateY(-50%) scale(0.85);
+}
+.wrapper i:first-child{
+  left: -22px;
+}
+.wrapper i:last-child{
+  right: -22px;
+}
+.wrapper .carousel{
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% / 3) - 2px);
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 16px;
+  border-radius: 8px;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+.carousel.no-transition {
+  scroll-behavior: auto;
+}
+.carousel.dragging {
+  scroll-snap-type: none;
+  scroll-behavior: auto;
+}
+.carousel.dragging .card-serve {
+  cursor: grab;
+  user-select: none;
+}
+.carousel :where(.card-serve, .img) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carousel .card-serve {
+  scroll-snap-align: start;
+  height: 400px;
+  list-style: none;
+  background: #fff;
+  cursor: pointer;
+  padding-bottom: 15px;
+  flex-direction: column;
+  border-radius: 8px;
+}
+.carousel .card-serve .img {
+  background: #1245ee;
+  height: 300px;
+  width: 300px;
+  border-radius: 10px;
+
+}
+.card-serve .img img {
+  width: 290px;
+  height: 290px;
+  border-radius: 10px;
+  object-fit: cover;
+  border: 4px solid #fff;
+}
+.carousel .card-serve h2 {
+  font-weight: 500;
+  font-size: 1.3rem;
+  margin: 10px 0 5px;
+  text-align: center;
+}
+
+
+@media screen and (max-width: 900px) {
+  .wrapper .carousel {
+    grid-auto-columns: calc((100% / 2) - 2px);
+  }
+}
+
+@media screen and (max-width:  768px) {
+  .wrapper .carousel {
+    grid-auto-columns: 105%;
+    margin-left: 10px;
+  }
+  .carousel .card-serve {
+    height: 330px;
+    padding-bottom: 10px;
+    background-color: var(--blue);
+
+  }
+  .carousel .card-serve .img {
+    height: 250px;
+    width: 250px;
+    border-radius: 8px;
+    background: #dadce0;
+    color: var(--light);
+  
+  }
+  .card-serve .img img {
+    width: 240px;
+    height: 240px;
+   
+  }
+  .carousel .card-serve h2 {
+    font-size: 1.2rem;
+    margin: 10px 0 5px;
+    text-align: center;
+    color: var(--light);
+  }
+  .wrapper i {
+    top: 50%;
+    height: 30px;
+    width: 30px;
+    font-size: 1rem;
+    line-height: 30px;
+    z-index: 1;
+  }
+  .wrapper i:first-child{
+    left: -3px;
+  }
+  .wrapper i:last-child{
+    right: -1px;
+  }
+  .error {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 250px;
+    padding: 12px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    background: #EF665B;
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px -3px #111;
+    }
+    
+    .error__icon {
+    width: 20px;
+    height: 20px;
+    transform: translateY(-2px);
+    margin-right: 8px;
+    }
+    
+    .error__icon path {
+    fill: #fff;
+    }
+    
+    .error__title {
+    font-weight: 500;
+    font-size: 10px;
+    color: #fff;
+    }
+    
+    .error__close {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    margin-left: auto;
+    }
+    
+    .error__close path {
+    fill: #fff;
+    }
+}
+#enlargedImg {
+  max-width: 100%; /* Adjust the percentage to your desired size */
+  height: 50vh;   /* Maintain the image's aspect ratio */
+  display: block; /* Remove any unwanted space around the image */
+  margin: 0 auto; /* Center the image horizontally */
+}
+.image-close{
+	position: absolute;
+    right: 10px;
+    font-size: 24px;
+	font-weight: 500;
+    color: #2d2d2e;
+    cursor: pointer;
+}
+.red{
+  color: red;
+}
+
